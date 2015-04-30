@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<polycode_material_library>
+   <shaders>
+      <shader type="glsl" name="Tavern" numAreaLights="30" numSpotLights="30" screen="false">
+	 <vp source="default/DefaultShader.vert" />
+	 <fp source="default/DefaultShader.frag" />
+      </shader>
+   </shaders>
+   <cubemaps />
+   <materials>
+      <material name="InvisGridMaterial" blendingMode="1">
+	 <shader name="Unlit"> <!-- Different shaders (set blending mode = 1: DefaultShader, DefaultShaderShadow, Unlit... more-->
+	    <textures>
+	       <texture name="diffuse">invis_grid_texture.png</texture>
+	    </textures>
+	    <params>
+	       <param name="shininess" value="0.00" />
+	       <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	       <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	       <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+	    </params>
+	 </shader>
+      </material>
+      <material name="GridMaterial" blendingMode="1">
+	 <shader name="Unlit">
+	    <textures>
+	       <texture name="diffuse">grid_texture.png</texture>
+	    </textures>
+	    <params>
+	       <param name="shininess" value="0.00" />
+	       <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	       <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	       <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+	    </params>
+	 </shader>
+      </material>
+      
+   <material name="MouseOverGridMaterial" blendingMode="1">
+       <shader name="Unlit">
+           <textures>
+               <texture name="diffuse">yellow_texture.png</texture>
+           </textures>
+           <params>
+               <param name="shininess" value="0.00" />
+               <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+               <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+               <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+           </params>
+       </shader>
+   </material>
+   
+   <material name="CantBuildGridMaterial" blendingMode="1">
+       <shader name="Unlit">
+           <textures>
+               <texture name="diffuse">pink_texture.png</texture>
+           </textures>
+           <params>
+               <param name="shininess" value="0.00" />
+               <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+               <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+               <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+           </params>
+       </shader>
+   </material>
+   
+   <material name="DoorMaterial" blendingMode="1">
+       <shader name="Unlit">
+           <textures>
+               <texture name="diffuse">green_texture.png</texture>
+           </textures>
+           <params>
+               <param name="shininess" value="0.00" />
+               <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+               <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+               <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+           </params>
+       </shader>
+   </material>
+   
+   <material name="SolidMaterial" blendingMode="1">
+      <shader name="Unlit">
+         <textures>
+            <texture name="diffuse">solid_black.png</texture>
+         </textures>
+         <params>
+            <param name="shininess" value="0.00" />
+            <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+            <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+            <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+         </params>
+      </shader>
+   </material>
+
+<material name="GreenMaterial" blendingMode="1">
+   <shader name="Unlit">
+      <textures>
+	 <texture name="diffuse">green_texture.png</texture>
+      </textures>
+      <params>
+	 <param name="shininess" value="0.00" />
+	 <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	 <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	 <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+<material name="RedXMaterial" blendingMode="1">
+   <shader name="Unlit">
+      <textures>
+	 <texture name="diffuse">redx.png</texture>
+      </textures>
+      <params>
+	 <param name="shininess" value="0.00" />
+	 <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	 <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	 <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+<material name="GreenOMaterial" blendingMode="1">
+   <shader name="Unlit">
+      <textures>
+	 <texture name="diffuse">greeno.png</texture>
+      </textures>
+      <params>
+	 <param name="shininess" value="0.00" />
+	 <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	 <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	 <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+<material name="FloorMaterial" blendingMode="1">
+   <shader name="Tavern">
+      <textures>
+         <texture name="diffuse">floor_18_new.png</texture>
+      </textures>
+      <params>
+         <param name="shininess" value="0.00" />
+         <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+         <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+         <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+<material name="WallMaterial" blendingMode="1">
+   <shader name="Tavern">
+      <textures>
+         <texture name="diffuse">wood_03_new.png</texture>
+      </textures>
+      <params>
+         <param name="shininess" value="0.00" />
+         <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+         <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+         <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+<material name="WoodMaterial" blendingMode="1">
+   <shader name="Tavern">
+      <textures>
+         <texture name="diffuse">wood_02.png</texture>
+      </textures>
+      <params>
+         <param name="shininess" value="0.00" />
+         <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+         <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+         <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+<material name="BitgemMaterial" blendingMode="1">
+   <shader name="Tavern">
+      <textures>
+         <texture name="diffuse">bitgem.png</texture>
+      </textures>
+      <params>
+         <param name="shininess" value="0.00" />
+         <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+         <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+         <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />      </params>
+   </shader>
+</material>
+
+<material name="BitgemNoShadeMaterial" blendingMode="1">
+   <shader name="Unlit">
+      <textures>
+         <texture name="diffuse">bitgem.png</texture>
+      </textures>
+      <params>
+         <param name="shininess" value="0.00" />
+         <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+         <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+         <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />      </params>
+   </shader>
+</material>
+
+   </materials>
+</polycode_material_library>

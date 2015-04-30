@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D6C2171B-9167-4FB6-851A-DC1CEDCFC43D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PolycodeTemplate</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Polycode.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Polycode.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\MiniCL;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\MiniCL\MiniCLTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletSoftBody;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\SpuSampleTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\SpuNarrowPhaseCollisionTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\OpenCL;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\DX11;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\CPU;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\BroadphaseCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\CollisionDispatch;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\Gimpact;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\CollisionShapes;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\NarrowPhaseCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\LinearMath;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Vehicle;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Dynamics;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\ConstraintSolver;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Character;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\include;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\UI;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\Map;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\AI;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\MiniCL\MiniCLTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\MiniCL;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletSoftBody;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\SpuSampleTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\SpuNarrowPhaseCollisionTask;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\OpenCL;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\DX11;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers\CPU;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded\GpuSoftBodySolvers;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletMultiThreaded;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\BroadphaseCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\CollisionDispatch;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\Gimpact;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\CollisionShapes;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision\NarrowPhaseCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\LinearMath;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletCollision;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Vehicle;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Dynamics;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\ConstraintSolver;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\include;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Modules\Dependencies\include\bullet\BulletDynamics\Character;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_ITERATOR_DEBUG_LEVEL=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(PolycodeLibsDebug);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\AI;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\Map;C:\Users\Olin\Documents\GitHub\Taverna\Windows\Template\Windows\Source\UI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(PolycodeLibsRelease);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="PolycodeTemplate.cpp" />
+    <ClCompile Include="PolycodeTemplateApp.cpp" />
+    <ClCompile Include="Source\AI\AStar.cpp" />
+    <ClCompile Include="Source\AI\FSM.cpp" />
+    <ClCompile Include="Source\AI\Person.cpp" />
+    <ClCompile Include="Source\AI\Staff.cpp" />
+    <ClCompile Include="Source\GameController.cpp" />
+    <ClCompile Include="Source\GameData.cpp" />
+    <ClCompile Include="Source\Map\Deleter.cpp" />
+    <ClCompile Include="Source\Map\Door.cpp" />
+    <ClCompile Include="Source\Map\GameMap.cpp" />
+    <ClCompile Include="Source\Map\MapTile.cpp" />
+    <ClCompile Include="Source\Map\Room.cpp" />
+    <ClCompile Include="Source\Map\RoomNode.cpp" />
+    <ClCompile Include="Source\Map\Table.cpp" />
+    <ClCompile Include="Source\Map\TavernExpansion.cpp" />
+    <ClCompile Include="Source\TavernaEventHandler.cpp" />
+    <ClCompile Include="Source\TavernaMain.cpp" />
+    <ClCompile Include="Source\TavernResources.cpp" />
+    <ClCompile Include="Source\UI\GameUI.cpp" />
+    <ClCompile Include="Source\UI\Menu.cpp" />
+    <ClCompile Include="Source\UI\MenuBuild.cpp" />
+    <ClCompile Include="Source\UI\MenuImage.cpp" />
+    <ClCompile Include="Source\UI\MenuItem.cpp" />
+    <ClCompile Include="Source\UI\MenuLabel.cpp" />
+    <ClCompile Include="Source\UI\MenuPatron.cpp" />
+    <ClCompile Include="Source\UI\MenuResources.cpp" />
+    <ClCompile Include="Source\UI\MenuSprite.cpp" />
+    <ClCompile Include="Source\UI\MenuStaff.cpp" />
+    <ClCompile Include="Source\UI\ResourceItem.cpp" />
+    <ClCompile Include="Source\UI\TextBubble.cpp" />
+    <ClCompile Include="Source\UI\UIMover.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\AI\AStar.h" />
+    <ClInclude Include="Source\AI\FSM.h" />
+    <ClInclude Include="Source\AI\Person.h" />
+    <ClInclude Include="Source\AI\Staff.h" />
+    <ClInclude Include="Source\Building\Deleter.h" />
+    <ClInclude Include="Source\Building\ExpansionNode.h" />
+    <ClInclude Include="Source\Building\GameMap.h" />
+    <ClInclude Include="Source\define.h" />
+    <ClInclude Include="Source\GameController.h" />
+    <ClInclude Include="Source\GameData.h" />
+    <ClInclude Include="Source\Iso.h" />
+    <ClInclude Include="Source\Building\MapTile.h" />
+    <ClInclude Include="Source\Building\Room.h" />
+    <ClInclude Include="Source\Building\TavernExpansion.h" />
+    <ClInclude Include="source\map\deleter.h" />
+    <ClInclude Include="Source\Map\Door.h" />
+    <ClInclude Include="Source\Map\ExpansionNode.h" />
+    <ClInclude Include="source\map\gamemap.h" />
+    <ClInclude Include="source\map\maptile.h" />
+    <ClInclude Include="source\map\room.h" />
+    <ClInclude Include="Source\Map\RoomNode.h" />
+    <ClInclude Include="Source\Map\Table.h" />
+    <ClInclude Include="source\map\tavernexpansion.h" />
+    <ClInclude Include="source\map\tiledeleter.h" />
+    <ClInclude Include="Source\PolycodeTemplateApp.h" />
+    <ClInclude Include="Source\TavernaEventHandler.h" />
+    <ClInclude Include="Source\TavernaMain.h" />
+    <ClInclude Include="Source\TavernExpDeleter.h" />
+    <ClInclude Include="Source\Building\TileDeleter.h" />
+    <ClInclude Include="Source\TavernResources.h" />
+    <ClInclude Include="Source\UI\GameUI.h" />
+    <ClInclude Include="Source\UI\Menu.h" />
+    <ClInclude Include="Source\UI\MenuBuild.h" />
+    <ClInclude Include="Source\UI\MenuImage.h" />
+    <ClInclude Include="Source\UI\MenuItem.h" />
+    <ClInclude Include="Source\UI\MenuLabel.h" />
+    <ClInclude Include="Source\UI\MenuPatron.h" />
+    <ClInclude Include="Source\UI\MenuResources.h" />
+    <ClInclude Include="Source\UI\MenuSprite.h" />
+    <ClInclude Include="Source\UI\MenuStaff.h" />
+    <ClInclude Include="Source\UI\ResourceItem.h" />
+    <ClInclude Include="Source\UI\TextBubble.h" />
+    <ClInclude Include="Source\UI\UIMover.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Images\2x3.xcf" />
+    <None Include="Assets\Images\3x3.png" />
+    <None Include="Assets\Images\3x3.xcf" />
+    <None Include="Assets\Images\3x5.png" />
+    <None Include="Assets\Images\3x5.xcf" />
+    <None Include="Assets\Images\4x2.png" />
+    <None Include="Assets\Images\4x2.xcf" />
+    <None Include="Assets\Images\4x4.png" />
+    <None Include="Assets\Images\4x4.xcf" />
+    <None Include="Assets\Images\5x3.png" />
+    <None Include="Assets\Images\5x3.xcf" />
+    <None Include="Assets\Images\5x5.png" />
+    <None Include="Assets\Images\5x5.xcf" />
+    <None Include="Assets\Images\arrowButton.png" />
+    <None Include="Assets\Images\arrowDownButton.png" />
+    <None Include="Assets\Images\arrowUpButton.png" />
+    <None Include="Assets\Images\barInfoBox.png" />
+    <None Include="Assets\Images\barInfoBox.xcf" />
+    <None Include="Assets\Images\bedchamberButton.png" />
+    <None Include="Assets\Images\bedchamberButton.xcf" />
+    <None Include="Assets\Images\bedchamberButtonActive.png" />
+    <None Include="Assets\Images\bedchamberButtonActive.xcf" />
+    <None Include="Assets\Images\buildBox.png" />
+    <None Include="Assets\Images\buildBox.xcf" />
+    <None Include="Assets\Images\buildButton.png" />
+    <None Include="Assets\Images\buildButton.xcf" />
+    <None Include="Assets\Images\buildIcon.png" />
+    <None Include="Assets\Images\buildIcon.xcf" />
+    <None Include="Assets\Images\buildMenu.png" />
+    <None Include="Assets\Images\buildMenu.xcf" />
+    <None Include="Assets\Images\d.png" />
+    <None Include="Assets\Images\d.xcf" />
+    <None Include="Assets\Images\expansionButton.png" />
+    <None Include="Assets\Images\expansionButton.xcf" />
+    <None Include="Assets\Images\expansionButtonActive.png" />
+    <None Include="Assets\Images\expansionButtonActive.xcf" />
+    <None Include="Assets\Images\kitchenButton.png" />
+    <None Include="Assets\Images\kitchenButton.xcf" />
+    <None Include="Assets\Images\kitchenButtonActive.png" />
+    <None Include="Assets\Images\kitchenButtonActive.xcf" />
+    <None Include="Assets\Images\mega.png" />
+    <None Include="Assets\Images\menubar.png" />
+    <None Include="Assets\Images\menubar.xcf" />
+    <None Include="Assets\Images\patronsBox.png" />
+    <None Include="Assets\Images\patronsBox.xcf" />
+    <None Include="Assets\Images\patronsbutton.png" />
+    <None Include="Assets\Images\patronsbutton.xcf" />
+    <None Include="Assets\Images\polycode_logo.png" />
+    <None Include="Assets\Images\portrait.png" />
+    <None Include="Assets\Images\portrait.xcf" />
+    <None Include="Assets\Images\resourcesBox.png" />
+    <None Include="Assets\Images\resourcesBox.xcf" />
+    <None Include="Assets\Images\resourcesIcon.png" />
+    <None Include="Assets\Images\resourcesIcon.xcf" />
+    <None Include="Assets\Images\restroomButton.png" />
+    <None Include="Assets\Images\restroomButton.xcf" />
+    <None Include="Assets\Images\restroomButtonActive.png" />
+    <None Include="Assets\Images\restroomButtonActive.xcf" />
+    <None Include="Assets\Images\spriteSheet.png" />
+    <None Include="Assets\Images\staffBox.png" />
+    <None Include="Assets\Images\staffBox.xcf" />
+    <None Include="Assets\Images\staffbutton.png" />
+    <None Include="Assets\Images\staffbutton.xcf" />
+    <None Include="Assets\Images\staffIcon.png" />
+    <None Include="Assets\Images\staffIcon.xcf" />
+    <None Include="Assets\Images\transparent.png" />
+    <None Include="Assets\Images\transparent.xcf" />
+    <None Include="Assets\Sprites\Sprites.mat" />
+    <None Include="Assets\Sprites\spriteSheet.png" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="default.pak" />
+    <None Include="hdr.pak" />
+    <None Include="Polycode.props" />
+    <None Include="Source\Map\Room" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

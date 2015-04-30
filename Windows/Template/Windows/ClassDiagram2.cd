@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AStar" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="AStar::Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\AI\AStar.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ACAAAAUAARIIACADQAAAAAAAgQAAAAABAAAAAAAAIAA=</HashCode>
+      <FileName>Source\AI\AStar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dialogue" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEIAAQAAAACAAAAAAAIYAAQAAAAQDoAAAAAAARAA=</HashCode>
+      <FileName>Source\AI\Dialogue.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FSM" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="FSM::State" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\AI\FSM.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IIRAAEAAkCQIAAABMAQAAQYAggCQAAgAAEgFEADAAgE=</HashCode>
+      <FileName>Source\AI\FSM.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dialogue" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Person" Collapsed="true">
+    <Position X="1.75" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Person::Intent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\AI\Person.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AISIEUziN2AawADIRg1AAoIgMIGE6CCAaOAVAAAgIgo=</HashCode>
+      <FileName>Source\AI\Person.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pathfinder" />
+      <Field Name="brain" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Staff" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAAAAAAAAAUAAAAAECEBACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\AI\Staff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameController" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEQAQAAABFAAAiFAAAAAIYEMABAgAAAAEAEAgBAGEAA=</HashCode>
+      <FileName>Source\GameController.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameUI" />
+      <Field Name="menuMonth" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameData" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="GameData::Month" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\GameData.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>Abb2OAhAICEACAQAISIw4IYAIQFJggYIAAExAAIAAg4=</HashCode>
+      <FileName>Source\GameData.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bar" Collapsed="true">
+    <Position X="27.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAgAAAAAAAgAAAAAEAAAABAAIAEAAABAAAA=</HashCode>
+      <FileName>Source\Map\Bar.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Deleter" Collapsed="true">
+    <Position X="21.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="map" Type="GameMap" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22.281" Y="3.75" />
+        <Point X="22.281" Y="3.466" />
+        <Point X="23.75" Y="3.466" />
+        <Point X="23.75" Y="2.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAEACQAgAABACAQCAgAKEAAQCAAAAAAAAAAAAQAAg=</HashCode>
+      <FileName>source\map\deleter.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Door" Collapsed="true">
+    <Position X="25.25" Y="3" Width="1.5" />
+    <AssociationLine Name="map" Type="GameMap" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.25" Y="3.249" />
+        <Point X="24.375" Y="3.249" />
+        <Point X="24.375" Y="2.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABAAECBAAAAAIACAFEAIAAABAQAJADAAAQEAEIAYAAA=</HashCode>
+      <FileName>Source\Map\Door.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Room" Collapsed="true">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJCEMEACQGEAxACAIPAAAYMSMRCJAEIAAACJAIgRACA=</HashCode>
+      <FileName>source\map\room.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RoomNode" Collapsed="true">
+    <Position X="20.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAgACAAAAAAAAAIAAAAAAAQAAAYACAAQA=</HashCode>
+      <FileName>Source\Map\RoomNode.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Table" Collapsed="true">
+    <Position X="27.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAEAAAAIAAIAAAAQAAAAIAADAAAIAEAAAAAAgA=</HashCode>
+      <FileName>Source\Map\Table.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TavernExpansion" Collapsed="true">
+    <Position X="23.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="map" Type="GameMap" FixedToPoint="true">
+      <Path>
+        <Point X="24.125" Y="3.75" />
+        <Point X="24.125" Y="2.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ELAAMEACQkAAxCAIIAAgA4ECIQAIAAEAIACZAIoRgCg=</HashCode>
+      <FileName>source\map\tavernexpansion.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TavernResources" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="TavernResources::Items" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Source\TavernResources.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>kQUgaWBEiooUCIMgIIMDqAAYMAFBZCSEEJQGRIghigo=</HashCode>
+      <FileName>Source\TavernResources.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameUI" Collapsed="true">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQYgC4DEBBIICDKAAAJAYQAgoN3EAAQIhAASJQEAIJg=</HashCode>
+      <FileName>Source\UI\GameUI.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ticker" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MenuBuild" Collapsed="true">
+    <Position X="14.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgUEQCTQCATACBAAEAAQARBQIBCABAQBAQABBANAAgU=</HashCode>
+      <FileName>Source\UI\MenuBuild.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuImage" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAACoAAAAAAIQACIACEAQAABAAAAAgAAgA=</HashCode>
+      <FileName>Source\UI\MenuImage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuItem" Collapsed="true">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQIACBAAAAAAIQACIACAAQAAAAAAAAgAAgA=</HashCode>
+      <FileName>Source\UI\MenuItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuLabel" Collapsed="true">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQWAAAAEQAACAAAAAAAIQBCIACAAQQAAAAAAAgACgA=</HashCode>
+      <FileName>Source\UI\MenuLabel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuMonth" Collapsed="true">
+    <Position X="14.5" Y="2" Width="1.5" />
+    <AssociationLine Name="staffMenu" Type="MenuStaff" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.812" Y="2.691" />
+        <Point X="14.609" Y="2.691" />
+        <Point X="14.609" Y="3.736" />
+        <Point X="13.438" Y="3.736" />
+        <Point X="13.438" Y="4.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IEQAASCAQSAAQnIAgAADQQBEoQYAAAAAEACAAAA4AAE=</HashCode>
+      <FileName>Source\UI\MenuMonth.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="buildMenu" />
+      <Field Name="resourcesMenu" />
+      <Field Name="staffMenu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MenuResources" Collapsed="true">
+    <Position X="16.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAJAAACACDAAAAAQgRACIAAAAACAAAAQCBAAAAg=</HashCode>
+      <FileName>Source\UI\MenuResources.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuSprite" Collapsed="true">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABUAAAAAAQAACAAAAAAAIQACIACAAQAABAAAAAgAAgA=</HashCode>
+      <FileName>Source\UI\MenuSprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuStaff" Collapsed="true">
+    <Position X="12.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAABAAAAACBAAAAAQARAEIAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Source\UI\MenuStaff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceItem" Collapsed="true">
+    <Position X="17" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAwICQAAAADAAAAAAgQACEABBAACAAIBgCRAAAAA=</HashCode>
+      <FileName>Source\UI\ResourceItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextBubble" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAQAAEBAAAABIAAQCAACAAAA=</HashCode>
+      <FileName>Source\UI\TextBubble.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ticker" Collapsed="true">
+    <Position X="11" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgEAAACEDACCCAIAAAAABABAAAAAAAAAgAAgBA=</HashCode>
+      <FileName>Source\UI\Ticker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameMap" Collapsed="true">
+    <Position X="23" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABEAAAEAAAAAACBACAAMAAIQAAAAAAAAQQAAAAAAA=</HashCode>
+      <FileName>source\map\gamemap.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tile" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MapTile" Collapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAgAAAiCASwAIBKCAAKIAIRQAgAAQIAAAgFIQAIA=</HashCode>
+      <FileName>source\map\maptile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<polycode_material_library>
+   <shaders />
+   <cubemaps />
+   <materials>
+      <material name="spriteSheet.png" blendingMode="1">
+	 <shader name="DefaultShader">
+	    <textures>
+	       <texture name="diffuse">spriteSheet.png</texture>
+	    </textures>
+	    <params>
+	       <param name="shininess" value="0.00" />
+	       <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	       <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	       <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+	    </params>
+	 </shader>
+      </material>
+     <material name="patron.png" blendingMode="1">
+       <shader name="DefaultShader">
+         <textures>
+           <texture name="diffuse">patron.png</texture>
+         </textures>
+         <params>
+           <param name="shininess" value="0.00" />
+           <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+           <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+           <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+         </params>
+       </shader>
+     </material>
+      <material name="BarKeep.png" blendingMode="1">
+         <shader name="DefaultShader">
+            <textures>
+               <texture name="diffuse">BarKeep.png</texture>
+            </textures>
+            <params>
+               <param name="shininess" value="0.00" />
+               <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+               <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+               <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+            </params>
+         </shader>
+      </material>
+      
+      <material name="waiter.png" blendingMode="1">
+         <shader name="DefaultShader">
+            <textures>
+               <texture name="diffuse">waiter.png</texture>
+            </textures>
+            <params>
+               <param name="shininess" value="0.00" />
+               <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+               <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+               <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+            </params>
+         </shader>
+      </material>
+      
+      <material name="waiterlvl1.png" blendingMode="1">
+	 <shader name="DefaultShader">
+	    <textures>
+	       <texture name="diffuse">waiterlvl1.png</texture>
+	    </textures>
+	    <params>
+	       <param name="shininess" value="0.00" />
+	       <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	       <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	       <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+	    </params>
+	 </shader>
+      </material>
+
+      <material name="waiterlvl2.png" blendingMode="1">
+	 <shader name="DefaultShader">
+	    <textures>
+	       <texture name="diffuse">waiterlvl2.png</texture>
+	    </textures>
+	    <params>
+	       <param name="shininess" value="0.00" />
+	       <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	       <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	       <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+	    </params>
+	 </shader>
+      </material>
+
+
+<material name="waiterlvl3.png" blendingMode="1">
+   <shader name="DefaultShader">
+      <textures>
+	 <texture name="diffuse">waiterlvl3.png</texture>
+      </textures>
+      <params>
+	 <param name="shininess" value="0.00" />
+	 <param name="ambient_color" value="0.00 0.00 0.00 1.00" />
+	 <param name="specular_color" value="1.00 1.00 1.00 1.00" />
+	 <param name="diffuse_color" value="1.00 1.00 1.00 1.00" />
+      </params>
+   </shader>
+</material>
+
+
+
+   </materials>
+</polycode_material_library>
