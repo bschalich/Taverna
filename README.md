@@ -7,6 +7,10 @@ Authors: Kevin Weber, Olin Olmstead, Bennett Schalich
 
 A tavern management game with rogue-like elements.
 
+The source code can be viewed under Windows/Template/Windows/Source.
+The reason it is there is our partner had some issues using Windows 7 
+and putting the source there fixed it.
+
 Note: Unfortunately certain code in this game has been deprecated, so there 
    are some bugs present that were not present prior. One specifically nasty
    bug occurs if you click the end of the month menu without clicking a 
