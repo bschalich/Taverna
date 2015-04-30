@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2014-03-03T06:41:39Z</created><keywords></keywords><modified>2014-03-03T06:41:39Z</modified><revision></revision><subject></subject><title></title><unit meter="0.010000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="entourage_set_01_atlas1-image" name="entourage_set_01_atlas1"><init_from>file:///Users/kevinweber/Desktop/entourage_set_01_lp/textures/entourage_set_01_atlas_4096.tga</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="entourage_set_01_atlas" name="entourage_set_01_atlas">
+      <instance_effect url="#entourage_set_01_atlas-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="entourage_set_01_atlas-fx" name="entourage_set_01_atlas">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">1.000000  1.000000 1.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="entourage_set_01_atlas1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="entourage_set_01_atlas1-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="candle_02_unlit-lib" name="candle_02_unlitMesh">
+      <mesh>
+        <source id="candle_02_unlit-POSITION">
+          <float_array id="candle_02_unlit-POSITION-array" count="51">
+5.378389 14.080665 3.870020
+6.040731 12.329250 -2.722809
+0.662344 14.080665 -6.592828
+-5.378389 16.575905 -3.870020
+-6.040731 14.844570 2.722809
+-0.662341 12.078722 6.592814
+-0.000000 12.282704 -0.000000
+0.657378 12.116141 -0.218417
+-0.600797 12.116141 -0.344818
+-0.081175 12.116141 0.807995
+-0.008197 15.616233 0.081587
+5.839913 0.000000 4.202114
+6.532459 0.000000 -2.944452
+-5.868014 0.000000 -4.222344
+-6.569467 0.000000 2.961136
+-0.715801 0.000000 7.124946
+0.719182 0.000000 -7.158581
+</float_array>
+          <technique_common>
+            <accessor source="#candle_02_unlit-POSITION-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="candle_02_unlit-Normal0">
+          <float_array id="candle_02_unlit-Normal0-array" count="189">
+0.054030 0.997879 0.036303
+-0.224503 0.964898 -0.136275
+0.185646 0.976368 0.110638
+0.185646 0.976368 0.110638
+-0.006404 0.999975 0.002887
+0.298184 0.912852 0.278905
+0.473268 0.837930 0.271829
+0.185646 0.976368 0.110638
+0.298184 0.912852 0.278905
+0.448663 0.877415 0.169837
+0.185646 0.976368 0.110638
+0.473268 0.837930 0.271829
+0.054030 0.997879 0.036303
+0.185646 0.976368 0.110638
+0.448663 0.877415 0.169837
+0.185646 0.976368 0.110638
+-0.224503 0.964898 -0.136275
+-0.006404 0.999975 0.002887
+0.892460 0.204190 -0.402270
+-0.794606 0.204190 -0.571759
+0.000003 1.000000 -0.000002
+-0.794606 0.204190 -0.571759
+-0.097854 0.204190 0.974028
+0.000003 1.000000 -0.000002
+-0.097854 0.204190 0.974028
+0.892460 0.204190 -0.402270
+0.000003 1.000000 -0.000002
+0.910873 0.041757 -0.410568
+0.910873 0.041757 -0.410568
+0.810700 0.042193 0.583939
+0.810700 0.042193 0.583939
+0.810700 0.042193 0.583939
+0.910873 0.041757 -0.410568
+-0.907749 0.039544 0.417645
+-0.810362 0.038059 -0.584692
+-0.907749 0.039544 0.417645
+-0.810362 0.038059 -0.584692
+-0.907749 0.039544 0.417645
+-0.810362 0.038059 -0.584692
+-0.907749 0.039544 0.417645
+-0.907749 0.039544 0.417645
+-0.098591 0.041540 0.994261
+-0.098591 0.041540 0.994261
+-0.907749 0.039544 0.417645
+-0.098591 0.041540 0.994261
+-0.098591 0.041540 0.994261
+0.810700 0.042193 0.583939
+0.810700 0.042193 0.583939
+0.810700 0.042193 0.583939
+-0.098591 0.041540 0.994261
+-0.098591 0.041540 0.994261
+-0.810362 0.038059 -0.584692
+0.107092 0.040031 -0.993443
+0.107092 0.040031 -0.993443
+0.107092 0.040031 -0.993443
+-0.810362 0.038059 -0.584692
+-0.810362 0.038059 -0.584692
+0.107092 0.040031 -0.993443
+0.910873 0.041757 -0.410568
+0.910873 0.041757 -0.410568
+0.910873 0.041757 -0.410568
+0.107092 0.040031 -0.993443
+0.107092 0.040031 -0.993443
+</float_array>
+          <technique_common>
+            <accessor source="#candle_02_unlit-Normal0-array" count="63" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="candle_02_unlit-UV0">
+          <float_array id="candle_02_unlit-UV0-array" count="52">
+0.499891 0.499695
+0.489574 0.499695
+0.448659 0.499695
+0.437726 0.499695
+0.458946 0.499695
+0.468712 0.499695
+0.479162 0.499695
+0.448352 0.449119
+0.457949 0.455059
+0.448352 0.459902
+0.438325 0.455059
+0.438859 0.440334
+0.438590 0.439538
+0.443055 0.437852
+0.438322 0.438742
+0.438054 0.437852
+0.489574 0.478295
+0.499891 0.478295
+0.437726 0.478295
+0.458946 0.478295
+0.468712 0.478295
+0.479162 0.478295
+0.448659 0.478295
+0.448352 0.438572
+0.457949 0.443220
+0.438325 0.443220
+</float_array>
+          <technique_common>
+            <accessor source="#candle_02_unlit-UV0-array" count="26" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="candle_02_unlit-VERTEX">
+          <input semantic="POSITION" source="#candle_02_unlit-POSITION"/>
+        </vertices>
+        <triangles count="21" material="entourage_set_01_atlas"><input semantic="VERTEX" offset="0" source="#candle_02_unlit-VERTEX"/><input semantic="NORMAL" offset="1" source="#candle_02_unlit-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#candle_02_unlit-UV0"/><p> 5 0 23 0 1 24 6 2 7 6 3 7 1 4 8 2 5 9 3 6 10 6 7 7 2 8 9 4 9 25 6 10 7 3 11 10 5 12 23 6 13 7 4 14 25 6 15 7 0 16 24 1 17 8 7 18 11 8 19 12 10 20 13 8 21 12 9 22 14 10 23 13 9 24 14 7 25 15 10 26 13 12 27 17 1 28 0 11 29 16 0 30 1 11 31 16 1 32 0 4 33 5 13 34 19 14 35 20 13 36 19 4 37 5 3 38 4 4 39 5 14 40 20 5 41 6 5 42 6 14 43 20 15 44 21 5 45 6 11 46 16 0 47 1 11 48 16 5 49 6 15 50 21 13 51 19 2 52 2 16 53 22 2 54 2 13 55 19 3 56 4 16 57 22 1 58 3 12 59 18 1 60 3 16 61 22 2 62 2</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="a" name="a">
+      <node name="candle_02_unlit" id="candle_02_unlit" layer="entourage_set_01" sid="candle_02_unlit"><matrix sid="matrix">1.000000 0.000000 0.000000 -100.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 300.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#candle_02_unlit-lib"><bind_material><technique_common><instance_material symbol="entourage_set_01_atlas" target="#entourage_set_01_atlas"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>24.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.041667</start_time><end_time>2.000000</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#a"></instance_visual_scene>
+  </scene>
+</COLLADA>
